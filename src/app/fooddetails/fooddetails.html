@@ -1,0 +1,22 @@
+<h2>Detailed View</h2>
+<div class="card">
+
+<div class="card-header">
+<h2>{{foodclassobj.itemname}}</h2>
+</div>
+
+<div class="card-body">
+<p>NAME {{foodclassobj.itemname}}</p>
+<p>DESCREPTION {{foodclassobj.itemdescription}}</p>
+<p>PRICE {{foodclassobj.itemprice}}</p>
+</div>
+
+<div class="card-footer">
+<div class="btn-group">
+  <a  class="btn btn-danger active" aria-current="page" (click)="removedata()">Delete</a>
+  <a  class="btn btn-primary" routerLink="/foodedit/{{foodclassobj.id}}">Edit</a>
+  <a  class="btn btn-primary" routerLink="/">Home</a>
+</div>
+
+</div>
+</div>

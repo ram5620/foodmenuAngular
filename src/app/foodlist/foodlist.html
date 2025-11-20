@@ -1,0 +1,28 @@
+<a routerLink="/foodcreate" class="btn btn-outline-success">+Add New</a>
+<h1>All items</h1>
+
+<table class="table table-bordered table-striped">
+
+    <thead  class="text-center">
+
+        <tr class="table-primary"><th>ITEM</th><th>ITEM-DETAILS</th></tr>
+    </thead>
+
+    <tbody>
+          @for (i of ar; track $index) 
+          {
+
+           <tr>
+
+               <td>{{i.itemname}}</td>
+               <td><a routerLink="fooddetails/{{i.id}}" class="btn-outline-primary">View</a></td>
+
+
+           </tr>   
+
+          }
+        
+    </tbody>
+
+
+</table>

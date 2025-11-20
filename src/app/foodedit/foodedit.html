@@ -1,0 +1,69 @@
+
+<h3>Add Food Item</h3>
+
+<form (ngSubmit)="savedata()" #f="ngForm">
+<div class="mb-3 mt-3">
+<label for="iname" class="form-label" >ITEM NAME</label>
+<input type="text" class="form-control" id="iname" placeholder="ENTER ITEM NAME" name="itemname"
+
+required minlength="3" maxlength="300" [(ngModel)]="foodobj.itemname" #itn="ngModel">
+
+<div class="text-danger">
+@if (itn.invalid && (itn.dirty || itn.touched)) {
+
+
+@if (itn.hasError("requred")) {<P>Enter Item Name</P>}
+@if (itn.hasError("minlength")) {<P>Enter At least 3 char</P>}
+@if (itn.hasError("maxlength")) {<P>Not More Than 300 char</P>}  
+
+}
+</div>
+</div>
+
+
+<div class="mb-3 mt-3">
+<label for="iprice" class="form-label" >ITEM PRICE</label>
+<input type="number" class="form-control" id="iprice" placeholder="ENTER ITEM PRICE" name="itemprice"
+
+required min="3" max="2000" [(ngModel)]="foodobj.itemprice" #itp="ngModel">
+
+<div class="text-danger">
+@if (itp.invalid && (itp.dirty || itp.touched)) {
+
+
+@if (itp.hasError("requred")) {<P>Enter Item Price</P>}
+@if (itp.hasError("minlength")) {<P>Item Should Be At least Rs:1</P>}
+@if (itp.hasError("maxlength")) {<P>Not More Than 2000 </P>}  
+
+}
+</div>
+</div>
+
+
+
+
+
+<div class="mb-3 mt-3">
+<label for="descr">DESCEIPTION</label>
+
+
+<textarea name="itemdescription" id="descr" class="form-control" rows="5"
+
+required minlength="3" maxlength="3000" [(ngModel)]="foodobj.itemdescription" #itd="ngModel"
+></textarea>
+
+<div class="text-danger">
+@if (itd.invalid && (itd.dirty || itd.touched)) {
+
+
+@if (itd.hasError("requred")) {<P>Enter Description</P>}
+@if (itd.hasError("minlength")) {<P>Enter At least 3 char </P>}
+@if (itd.hasError("maxlength")) {<P>Not More Than 3000 char</P>}  
+
+}
+</div>
+</div>
+<button type="submit" class="btn-outline-primary" [disabled]="f.invalid">Submit</button>
+
+<a routerLink="/" class="btn btn-primary">Home</a>
+</form>

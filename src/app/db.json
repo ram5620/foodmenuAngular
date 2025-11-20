@@ -1,0 +1,28 @@
+{
+  "fooditems": [
+    {
+      "id": "3862",
+      "itemname": "tea",
+      "itemprice": 15,
+      "itemdescription": "tea Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+      "id": "6e87",
+      "itemname": "potato-chips",
+      "itemprice": 50,
+      "itemdescription": "cLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+    },
+    {
+      "id": "d191",
+      "itemname": "tomato",
+      "itemprice": 80,
+      "itemdescription": "iam the king of Sause\n"
+    },
+    {
+      "id": "e98f",
+      "itemname": "tomato",
+      "itemprice": 80,
+      "itemdescription": "lilillil"
+    }
+  ]
+}
